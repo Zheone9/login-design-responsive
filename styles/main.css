@@ -1,0 +1,209 @@
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+.login-design {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 100vh;
+}
+/*acomodar olas*/
+.waves {
+  background-image: url(../assets/wave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-data {
+  border: solid;
+  text-align: center;
+  width: 60%;
+  border: none;
+}
+
+.login-data h1 {
+  font-weight: 200;
+  font-size: 3rem;
+  margin-left: 28px;
+}
+
+.input-group {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.input-fill input {
+  border: none;
+  border-bottom: 3px solid #848f9a;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.0625rem;
+  padding-left: 1.8rem;
+  line-height: 147.6%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.input-fill input:focus {
+  outline: none;
+  border-color: #6c1aef;
+  background-color: #e9ecef;
+}
+.input-fill input:hover {
+  cursor: default;
+}
+.input-fill input:focus ~ .icon {
+  color: #6c1aef;
+}
+
+.input-fill .input-label {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  line-height: 147.6%;
+  color: #848f9a;
+  transition: top 0.2s;
+  font-weight: 700;
+}
+
+.input-fill i {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  color: #848f9a;
+  font-size: 1.5rem;
+}
+
+.input-fill input:focus + .input-label {
+  top: 0;
+  margin-bottom: 2rem;
+  color: #6c1aef;
+}
+.login-form a {
+  margin-left: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #848f9a;
+  margin-bottom: 1.3rem;
+  font-weight: 800;
+  transition: 0.3s ease-in-out all;
+  font-size: 18px;
+}
+
+.login-form a:hover {
+  color: #6c1aef;
+}
+
+.btn-login {
+  border-radius: 3rem;
+  width: 45%;
+  border: 1px solid #6c1aef;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+  background-color: #6c1aef;
+  color: #fff;
+  margin-left: 30px;
+  padding: 0.5rem 0;
+  transition: 0.3s ease-in-out all;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #6c1aef;
+}
+.input-fill .input-label:hover {
+  color: #6c1aef;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-login {
+    width: 45%;
+
+    font-size: 1.1rem;
+
+    padding: 0.5rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .btn-login {
+    width: 169.02px;
+  }
+  .input-fill .input-label {
+    font-size: 0.9rem;
+  }
+  .input-fill input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login-design {
+    display: block;
+
+    /* grid-template-columns: repeat(2, 50%); */
+  }
+  .login {
+    margin-bottom: 2rem;
+    margin: auto;
+  }
+  .waves {
+    display: none;
+  }
+  .login-data h1 {
+    font-size: 2.4rem;
+    margin: auto;
+  }
+  /*responsive image*/
+  /* .login-data img {
+        max-width: 100%;
+        height: auto;
+    } */
+
+  .login-data img {
+    text-align: center;
+  }
+  .login-data {
+    border: solid;
+    text-align: center;
+    width: 100%;
+    border: none;
+  }
+  .input-fill input {
+    width: 100%;
+  }
+  form {
+    padding-right: 1.9rem;
+  }
+  .login {
+    /* margin-right: 28px; */
+    width: 100wh;
+  }
+
+  .login-form a {
+    margin-bottom: 1.3rem;
+
+    font-weight: 800;
+    transition: 0.3s ease-in-out all;
+    font-size: 18px;
+  }
+  .btn-login {
+    margin-left: 30px;
+    width: 169.02px;
+  }
+}
