@@ -85,7 +85,10 @@ body {
   color: #848f9a;
   font-size: 1.5rem;
 }
-
+.focused-input {
+  top: 0 !important;
+  color: #6c1aef;
+}
 .input-fill input:focus + .input-label {
   top: 0;
   margin-bottom: 2rem;
